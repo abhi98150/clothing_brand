@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.net/flone/flone/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 04:41:51 GMT -->
+<!-- Mirrored from htmldemo.net/flone/flone/my-account.blade.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 04:41:51 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,382 +15,35 @@
     <!-- CSS
 	============================================ -->
    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/icons.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <!-- Icon Font CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/icons.min.css') }}">
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
 </head>
 
 <body>
-<header class="header-area header-in-container clearfix">
-    <div class="header-top-area">
-        <div class="container">
-            <div class="header-top-wap">
-                <div class="language-currency-wrap">
-                    <div class="same-language-currency language-style">
-                        <a href="#">English <i class="fa fa-angle-down"></i></a>
-                        <div class="lang-car-dropdown">
-                            <ul>
-                                <li><a href="#">Arabic </a></li>
-                                <li><a href="#">Bangla </a></li>
-                                <li><a href="#">Hindi  </a></li>
-                                <li><a href="#">Spanish </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="same-language-currency use-style">
-                        <a href="#">USD  <i class="fa fa-angle-down"></i></a>
-                        <div class="lang-car-dropdown">
-                            <ul>
-                                <li><a href="#">Taka (BDT) </a></li>
-                                <li><a href="#">Riyal (SAR) </a></li>
-                                <li><a href="#">Rupee (INR)  </a></li>
-                                <li><a href="#">Dirham (AED) </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="same-language-currency">
-                        <p>Call Us 3965410</p>
-                    </div>
-                </div>
-                <div class="header-offer">
-                    <p>Free delivery on order over <span>$200</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-bottom sticky-bar header-res-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-6 col-4">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img alt="" src="assets/img/logo/logo.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-lg-8 d-none d-lg-block">
-                    <div class="main-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                    <ul class="mega-menu mega-menu-padding">
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">Demo Group 01</a></li>
-                                                <li><a href="index.html">Home 1 – Fashion</a></li>
-                                                <li><a href="index-2.html">Home 2 – Fashion</a></li>
-                                                <li><a href="index-3.html">Home 3 – Fashion</a></li>
-                                                <li><a href="index-4.html">Home 4 – Fashion</a></li>
-                                                <li><a href="index-5.html">Home 5 – Fashion</a></li>
-                                                <li><a href="index-6.html">Home 6 – Fashion</a></li>
-                                                <li><a href="index-7.html">Home 7 – Fashion</a></li>
-                                                <li><a href="index-8.html">Home 8 – Minimal</a></li>
-                                                <li><a href="index-9.html">Home 9 – Electronics</a></li>
-                                                <li><a href="index-10.html">Home 10 – Furniture</a></li>
-                                                <li><a href="index-11.html">Home 11 - showcase slider</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">Demo Group 02</a></li>
-                                                <li><a href="index-12.html">Home 12 – Plants</a></li>
-                                                <li><a href="index-13.html">Home 13 – Cosmetic</a></li>
-                                                <li><a href="index-14.html">Home 14 – Christmas</a></li>
-                                                <li><a href="index-15.html">Home 15 – Fruit</a></li>
-                                                <li><a href="index-16.html">Home 16 –  Black Friday</a></li>
-                                                <li><a href="index-17.html">Home 17 – Flower</a></li>
-                                                <li><a href="index-18.html">Home 18 – Book</a></li>
-                                                <li><a href="index-19.html">Home 19 – Fashion</a></li>
-                                                <li><a href="index-20.html">Home 20 – Electronics</a></li>
-                                                <li><a href="index-21.html">Home 21 – Furniture</a></li>
-                                                <li><a href="index-22.html">Home 22 – Handmade</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">Demo Group 03</a></li>
-                                                <li><a href="index-23.html">Home 23 – Organic</a></li>
-                                                <li><a href="index-24.html">Home 24 – Pet Food</a></li>
-                                                <li><a href="index-25.html">Home 25 – Auto Parts</a></li>
-                                                <li><a href="index-26.html">Home 26 – Cake Shop</a></li>
-                                                <li><a href="index-27.html">Home 27 – Kids Fashion</a></li>
-                                                <li><a href="index-28.html">Home 28 – Book Shop</a></li>
-                                                <li><a href="index-29.html">Home 29 – Flower Shop</a></li>
-                                                <li><a href="index-30.html">Home 30 – Instagram</a></li>
-                                                <li><a href="index-31.html">Home 31 – Black Friday</a></li>
-                                                <li><a href="index-32.html">Home 32 – Valentine Day</a></li>
-                                                <li><a href="index-33.html">Home 33 – Medical Equipment</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop.html"> Shop <i class="fa fa-angle-down"></i> </a>
-                                    <ul class="mega-menu">
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">shop layout</a></li>
-                                                <li><a href="shop.html">standard style</a></li>
-                                                <li><a href="shop-filter.html">Grid filter style</a></li>
-                                                <li><a href="shop-grid-2-col.html">Grid 2 column</a></li>
-                                                <li><a href="shop-no-sidebar.html">Grid No sidebar</a></li>
-                                                <li><a href="shop-grid-fw.html">Grid full wide </a></li>
-                                                <li><a href="shop-right-sidebar.html">Grid right sidebar</a></li>
-                                                <li><a href="shop-list.html">list 1 column box </a></li>
-                                                <li><a href="shop-list-fw.html">list 1 column full wide </a></li>
-                                                <li><a href="shop-list-fw-2col.html">list 2 column  full wide</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">product details</a></li>
-                                                <li><a href="product-details.html">tab style 1</a></li>
-                                                <li><a href="product-details-2.html">tab style 2</a></li>
-                                                <li><a href="product-details-3.html">tab style 3</a></li>
-                                                <li><a href="product-details-4.html">sticky style</a></li>
-                                                <li><a href="product-details-5.html">gallery style </a></li>
-                                                <li><a href="product-details-slider-box.html">Slider style</a></li>
-                                                <li><a href="product-details-affiliate.html">affiliate style</a></li>
-                                                <li><a href="product-details-6.html">fixed image style </a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul>
-                                                <li class="mega-menu-img"><a href="shop.html"><img src="assets/img/banner/banner-12.png" alt=""></a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop.html">Collection</a></li>
-                                <li><a href="#"> Pages <i class="fa fa-angle-down"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="about.html">about us</a></li>
-                                        <li><a href="cart-page.html">cart page</a></li>
-                                        <li><a href="checkout.html">checkout </a></li>
-                                        <li><a href="wishlist.html">wishlist </a></li>
-                                        <li><a href="my-account.html">my account</a></li>
-                                        <li><a href="login-register.html">login / register </a></li>
-                                        <li><a href="contact.html">contact us </a></li>
-                                        <li><a href="404.html">404 page </a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Blog <i class="fa fa-angle-down"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="blog.html">blog standard</a></li>
-                                        <li><a href="blog-no-sidebar.html">blog no sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                        <li><a href="blog-details.html">blog details 1</a></li>
-                                        <li><a href="blog-details-2.html">blog details 2</a></li>
-                                        <li><a href="blog-details-3.html">blog details 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html"> About </a></li>
-                                <li><a href="contact.html"> Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-6 col-8">
-                       <div class="header-right-wrap">
-                        <div class="same-style header-search">
-                            <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
-                            <div class="search-content">
-                                <form action="#">
-                                    <input type="text" placeholder="Search" />
-                                    <button class="button-search"><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div> 
-                        </div>
-                        <div class="same-style account-satting">
-                            <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
-                            <div class="account-dropdown">
-                                <ul>
-                                    <li><a href="login-register.html">Login</a></li>
-                                    <li><a href="login-register.html">Register</a></li>
-                                    <li><a href="wishlist.html">Wishlist  </a></li>
-                                    <li><a href="my-account.html">my account</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="same-style header-wishlist">
-                            <a href="wishlist.html"><i class="pe-7s-like"></i></a>
-                        </div>
-                        <div class="same-style cart-wrap">
-                            <button class="icon-cart">
-                                <i class="pe-7s-shopbag"></i>
-                                <span class="count-style">02</span>
-                            </button>
-                            <div class="shopping-cart-content">
-                                <ul>
-                                    <li class="single-shopping-cart">
-                                        <div class="shopping-cart-img">
-                                            <a href="#"><img alt="" src="assets/img/cart/cart-1.png"></a>
-                                        </div>
-                                        <div class="shopping-cart-title">
-                                            <h4><a href="#">T- Shart & Jeans </a></h4>
-                                            <h6>Qty: 02</h6>
-                                            <span>$260.00</span>
-                                        </div>
-                                        <div class="shopping-cart-delete">
-                                            <a href="#"><i class="fa fa-times-circle"></i></a>
-                                        </div>
-                                    </li>
-                                    <li class="single-shopping-cart">
-                                        <div class="shopping-cart-img">
-                                            <a href="#"><img alt="" src="assets/img/cart/cart-2.png"></a>
-                                        </div>
-                                        <div class="shopping-cart-title">
-                                            <h4><a href="#">T- Shart & Jeans </a></h4>
-                                            <h6>Qty: 02</h6>
-                                            <span>$260.00</span>
-                                        </div>
-                                        <div class="shopping-cart-delete">
-                                            <a href="#"><i class="fa fa-times-circle"></i></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="shopping-cart-total">
-                                    <h4>Shipping : <span>$20.00</span></h4>
-                                    <h4>Total : <span class="shop-total">$260.00</span></h4>
-                                </div>
-                                <div class="shopping-cart-btn btn-hover text-center">
-                                    <a class="default-btn" href="cart-page.html">view cart</a>
-                                    <a class="default-btn" href="checkout.html">checkout</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile-menu-area">
-                <div class="mobile-menu">
-                    <nav id="mobile-menu-active">
-                        <ul class="menu-overflow">
-                            <li><a href="index.html">HOME</a>
-                                <ul>
-                                    <li><a href="#">Demo Group 01</a>
-                                        <ul>
-                                            <li><a href="index.html">Home 1 – Fashion</a></li>
-                                            <li><a href="index-2.html">Home 2 – Fashion</a></li>
-                                            <li><a href="index-3.html">Home 3 – Fashion</a></li>
-                                            <li><a href="index-4.html">Home 4 – Fashion</a></li>
-                                            <li><a href="index-5.html">Home 5 – Fashion</a></li>
-                                            <li><a href="index-6.html">Home 6 – Fashion</a></li>
-                                            <li><a href="index-7.html">Home 7 – Fashion</a></li>
-                                            <li><a href="index-8.html">Home 8 – Minimal</a></li>
-                                            <li><a href="index-9.html">Home 9 – Electronics</a></li>
-                                            <li><a href="index-10.html">Home 10 – Furniture</a></li>
-                                            <li><a href="index-11.html">Home 11 - showcase slider</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Demo Group 02</a>
-                                        <ul>
-                                            <li><a href="index-12.html">Home 12 – Plants</a></li>
-                                            <li><a href="index-13.html">Home 13 – Cosmetic</a></li>
-                                            <li><a href="index-14.html">Home 14 – Christmas</a></li>
-                                            <li><a href="index-15.html">Home 15 – Fruit</a></li>
-                                            <li><a href="index-16.html">Home 16 –  Black Friday</a></li>
-                                            <li><a href="index-17.html">Home 17 – Flower</a></li>
-                                            <li><a href="index-18.html">Home 18 – Book</a></li>
-                                            <li><a href="index-19.html">Home 19 – Fashion</a></li>
-                                            <li><a href="index-20.html">Home 20 – Electronics</a></li>
-                                            <li><a href="index-21.html">Home 21 – Furniture</a></li>
-                                            <li><a href="index-22.html">Home 22 – Handmade</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Demo Group 03</a>
-                                        <ul>
-                                            <li><a href="index-23.html">Home 23 – Organic</a></li>
-                                            <li><a href="index-24.html">Home 24 – Pet Food</a></li>
-                                            <li><a href="index-25.html">Home 25 – Auto Parts</a></li>
-                                            <li><a href="index-26.html">Home 26 – Cake Shop</a></li>
-                                            <li><a href="index-27.html">Home 27 – Kids Fashion</a></li>
-                                            <li><a href="index-28.html">Home 28 – Book Shop</a></li>
-                                            <li><a href="index-29.html">Home 29 – Flower Shop</a></li>
-                                            <li><a href="index-30.html">Home 30 – Instagram</a></li>
-                                            <li><a href="index-31.html">Home 31 – Black Friday</a></li>
-                                            <li><a href="index-32.html">Home 32 – Valentine Day</a></li>
-                                            <li><a href="index-33.html">Home 33 – Medical Equipment</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="shop.html">Shop</a>
-                                <ul>
-                                    <li><a href="#">shop layout</a>
-                                        <ul>
-                                            <li><a href="shop.html">standard style</a></li>
-                                            <li><a href="shop-filter.html">Grid filter style</a></li>
-                                            <li><a href="shop-grid-2-col.html">Grid 2 column</a></li>
-                                            <li><a href="shop-no-sidebar.html">Grid No sidebar</a></li>
-                                            <li><a href="shop-grid-fw.html">Grid full wide </a></li>
-                                            <li><a href="shop-right-sidebar.html">Grid right sidebar</a></li>
-                                            <li><a href="shop-list.html">list 1 column box </a></li>
-                                            <li><a href="shop-list-fw.html">list 1 column full wide </a></li>
-                                            <li><a href="shop-list-fw-2col.html">list 2 column  full wide</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">product details</a>
-                                        <ul>
-                                            <li><a href="product-details.html">tab style 1</a></li>
-                                            <li><a href="product-details-2.html">tab style 2</a></li>
-                                            <li><a href="product-details-3.html">tab style 3</a></li>
-                                            <li><a href="product-details-4.html">sticky style</a></li>
-                                            <li><a href="product-details-5.html">gallery style </a></li>
-                                            <li><a href="product-details-slider-box.html">Slider style</a></li>
-                                            <li><a href="product-details-affiliate.html">affiliate style</a></li>
-                                            <li><a href="product-details-6.html">fixed image style </a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="shop.html">Collection</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="cart-page.html">cart page</a></li>
-                                    <li><a href="checkout.html">checkout </a></li>
-                                    <li><a href="wishlist.html">wishlist </a></li>
-                                    <li><a href="my-account.html">my account</a></li>
-                                    <li><a href="login-register.html">login / register </a></li>
-                                    <li><a href="contact.html">contact us </a></li>
-                                    <li><a href="404.html">404 page </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="blog.html">Blog</a>
-                                <ul>
-                                    <li><a href="blog.html">blog standard</a></li>
-                                    <li><a href="blog-no-sidebar.html">blog no sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                    <li><a href="blog-details.html">blog details 1</a></li>
-                                    <li><a href="blog-details-2.html">blog details 2</a></li>
-                                    <li><a href="blog-details-3.html">blog details 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
+<!-- navbar -->
+@include('frontend.common.navbar')
+<!-- end navbar -->
+
 <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
     <div class="container">
         <div class="breadcrumb-content text-center">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.blade.php">Home</a>
                 </li>
                 <li class="active">My Account </li>
             </ul>
         </div>
     </div>
+
 </div>
 <div class="checkout-area pb-80 pt-100">
     <div class="container">
@@ -400,138 +53,131 @@
                     <div id="faq" class="panel-group">
                         <div class="panel panel-default single-my-account">
                             <div class="panel-heading my-account-title">
-                                <h3 class="panel-title"><span>1 .</span> <a data-bs-toggle="collapse" href="#my-account-1">Edit your account information </a></h3>
+                                <h3 class="panel-title"> <a data-bs-toggle="collapse" href="#my-account-1"><h4 align="center">Edit your account information</h4> </a></h3>
                             </div>
                             <div id="my-account-1" class="panel-collapse collapse show" data-bs-parent="#faq">
                                 <div class="panel-body">
                                     <div class="myaccount-info-wrapper">
                                         <div class="account-info-wrapper">
-                                            <h4>My Account Information</h4>
+                                        @if(session('success'))
+                                                <div class="alert alert-success alert-dismissible" role="alert">
+                                                    {{ session('success') }}
+                                                    <button type="button" class="btn btn-close" id="close-alert" aria-label="Close">×</button>
+                                                </div>
+                                            @endif
+
+                                            <script>
+                                                document.addEventListener('DOMContentLoaded', function() {
+                                                    const closeButton = document.getElementById('close-alert');
+                                                    if (closeButton) {
+                                                        closeButton.addEventListener('click', function() {
+                                                            const alert = closeButton.closest('.alert');
+                                                            if (alert) {
+                                                                alert.style.display = 'none';
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            </script>
+
+
+                                        <h4 style="font-weight: bold; text-decoration: underline;">My Account Information</h4>
                                             <h5>Your Personal Details</h5>
                                         </div>
+
+                                        
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="billing-info">
-                                                    <label>First Name</label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="billing-info">
-                                                    <label>Last Name</label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="billing-info">
-                                                    <label>Email Address</label>
-                                                    <input type="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="billing-info">
-                                                    <label>Telephone</label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <div class="billing-info">
-                                                    <label>Fax</label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="billing-back-btn">
-                                            <div class="billing-back">
-                                                <a href="#"><i class="fa fa-arrow-up"></i> back</a>
-                                            </div>
-                                            <div class="billing-btn">
-                                                <button type="submit">Continue</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default single-my-account">
-                            <div class="panel-heading my-account-title">
-                                <h3 class="panel-title"><span>2 .</span> <a data-bs-toggle="collapse" href="#my-account-2">Change your password </a></h3>
-                            </div>
-                            <div id="my-account-2" class="panel-collapse collapse" data-bs-parent="#faq">
-                                <div class="panel-body">
-                                    <div class="myaccount-info-wrapper">
-                                        <div class="account-info-wrapper">
-                                            <h4>Change Password</h4>
-                                            <h5>Your Password</h5>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="billing-info">
-                                                    <label>Password</label>
-                                                    <input type="password">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="billing-info">
-                                                    <label>Password Confirm</label>
-                                                    <input type="password">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="billing-back-btn">
-                                            <div class="billing-back">
-                                                <a href="#"><i class="fa fa-arrow-up"></i> back</a>
-                                            </div>
-                                            <div class="billing-btn">
-                                                <button type="submit">Continue</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default single-my-account">
-                            <div class="panel-heading my-account-title">
-                                <h3 class="panel-title"><span>3 .</span> <a data-bs-toggle="collapse" href="#my-account-3">Modify your address book entries   </a></h3>
-                            </div>
-                            <div id="my-account-3" class="panel-collapse collapse" data-bs-parent="#faq">
-                                <div class="panel-body">
-                                    <div class="myaccount-info-wrapper">
-                                        <div class="account-info-wrapper">
-                                            <h4>Address Book Entries</h4>
-                                        </div>
-                                        <div class="entries-wrapper">
+                                                
+                                        <form method="POST" action="{{ route('myaccount.update') }}" enctype="multipart/form-data">
+                                            @csrf
+                                            @method('PUT')
+
                                             <div class="row">
-                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
-                                                    <div class="entries-info text-center">
-                                                        <p>Keith L. Castro </p>
-                                                        <p>  559 Pratt Avenue </p>
-                                                        <p> Orchards, WA 98662 </p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
-                                                    <div class="entries-edit-delete text-center">
-                                                        <a class="edit" href="#">Edit</a>
-                                                        <a href="#">Delete</a>
-                                                    </div>
-                                                </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                            <div class="billing-info">
+                                                <label>Profile Image</label>
+                                                @if($userDetails->image)
+                                                    <img src="{{ asset('storage/' . $userDetails->image) }}" alt="Profile Image"  style="width: 150px; margin-left:10px; margin-bottom:8px; height: 150px; border-radius: 50%; object-fit: cover;">
+                                                @else
+                                                    <p>No image available</p>
+                                                @endif
+                                                <input type="file" name="image" class="form-control mt-2">
                                             </div>
                                         </div>
-                                        <div class="billing-back-btn">
-                                            <div class="billing-back">
-                                                <a href="#"><i class="fa fa-arrow-up"></i> back</a>
+
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>Full Name</label>
+                                                        <input type="text" name="name" value="{{ old('name', $user->name ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>City</label>
+                                                        <input type="text" name="city" value="{{ old('city', $userDetails->city ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="billing-info">
+                                                        <label>Email Address</label>
+                                                        <input type="email" name="email" value="{{ old('email', $user->email ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>Mobile No</label>
+                                                        <input type="text" name="phone" value="{{ old('phone', $userDetails->phone ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>Country Name</label>
+                                                        <input type="text" name="country" value="{{ old('country', $userDetails->country ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>Street Address</label>
+                                                        <input type="text" name="street_address" value="{{ old('street_address', $userDetails->street_address ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label>State</label>
+                                                        <input type="text" name="state" value="{{ old('state', $userDetails->state ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
-                                            <div class="billing-btn">
-                                                <button type="submit">Continue</button>
+
+                                            <div class="billing-back-btn">
+                                                <div class="billing-back">
+                                                    <a href="#"><i class="fa fa-arrow-up"></i> Back</a>
+                                                </div>
+                                                <div class="billing-btn">
+                                                    <button type="submit" class="btn btn-primary">Update</button>
+                                                </div>
                                             </div>
+                                        </form>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                       
                         <div class="panel panel-default single-my-account">
                             <div class="panel-heading my-account-title">
-                                <h3 class="panel-title"><span>4 .</span> <a href="wishlist.html">Modify your wish list   </a></h3>
+                                <h3 class="panel-title"> <a href="wishlist.blade.php">Modify your wish list   </a></h3>
                             </div>
                         </div>
                     </div>
@@ -540,91 +186,8 @@
         </div>
     </div>
 </div> 
-<footer class="footer-area bg-gray pt-100 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="copyright mb-30">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img alt="" src="assets/img/logo/logo.png">
-                        </a>
-                    </div>
-                    <p>© 2021 <a href="#">Flone</a>.<br> All Rights Reserved</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="footer-widget mb-30 ml-30">
-                    <div class="footer-title">
-                        <h3>ABOUT US</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Store location</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Orders tracking</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="footer-widget mb-30 ml-50">
-                    <div class="footer-title">
-                        <h3>USEFUL LINKS</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Size guide</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30 ml-75">
-                    <div class="footer-title">
-                        <h3>FOLLOW US</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30 ml-70">
-                    <div class="footer-title">
-                        <h3>SUBSCRIBE</h3>
-                    </div>
-                    <div class="subscribe-style">
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <div id="mc_embed_signup" class="subscribe-form">
-                            <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                <div id="mc_embed_signup_scroll" class="mc-form">
-                                    <input class="email" type="email" required="" placeholder="Enter your email here.." name="EMAIL" value="">
-                                    <div class="mc-news" aria-hidden="true">
-                                        <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
-                                    </div>
-                                    <div class="clear">
-                                        <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
+@include('frontend.common.footer')
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
@@ -766,25 +329,39 @@
 
 
 
+<!-- msg display dismissal -->
+<!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const closeBtns = document.querySelectorAll('.close-btn');
+            
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const alert = this.parentElement;
+                    alert.style.display = 'none';
+                });
+            });
+        });
+    </script> -->
 
+<!-- end msg dismisal -->
 
 
 <!-- All JS is here
 ============================================ -->
 
-<script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="assets/js/vendor/jquery-v3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="assets/js/vendor/popper.min.js"></script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/plugins.js"></script>
+<script src="{{ asset('assets/js/vendor/modernizr-3.11.7.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-v3.6.0.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-migrate-v3.3.2.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/plugins.js') }}"></script>
 <!-- Ajax Mail -->
-<script src="assets/js/ajax-mail.js"></script>
+<script src="{{ asset('assets/js/ajax-mail.js') }}"></script>
 <!-- Main JS -->
-<script src="assets/js/main.js"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 
 
-<!-- Mirrored from htmldemo.net/flone/flone/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 04:41:51 GMT -->
+<!-- Mirrored from htmldemo.net/flone/flone/my-account.blade.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Sep 2024 04:41:51 GMT -->
 </html>
