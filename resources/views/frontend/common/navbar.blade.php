@@ -2,11 +2,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-6 col-4">
-                <div class="logo">
-                    <a href="index.blade.php">
-                        <img alt="" src="assets/img/logo/logo.png">
-                    </a>
-                </div>
+
+            {{ dd($settings) }} <!-- Check the output -->
+<!-- Logo of the website -->
+<div class="logo">
+    <a href="{{ url('/') }}">
+        <img alt="" src="{{ asset('storage/' . $settings['header_logo']) }}"> <!-- Use the header logo -->
+    </a>
+</div>
+<!-- Logo end -->
+
+
             </div>
 
             <div class="col-xl-8 col-lg-8 d-none d-lg-block">

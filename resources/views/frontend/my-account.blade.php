@@ -93,9 +93,17 @@
                                             @method('PUT')
 
                                             <div class="row">
+                                            
+                                            <div class="col-lg-6 col-md-6 ">
+                                                    <div class="billing-info" style="margin-top: 190px;">
+                                                        <label>Full Name</label>
+                                                        <input type="text" name="name" value="{{ old('name', $user->name ?? '') }}" class="form-control">
+                                                    </div>
+                                                </div>
+
 
                                             <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info">
+                                            <div class="billing-info" style="margin-left: -185px; margin-top: -10px;">
                                                 <label>Profile Image</label>
                                                 @if($userDetails->image)
                                                     <img src="{{ asset('storage/' . $userDetails->image) }}" alt="Profile Image"  style="width: 150px; margin-left:10px; margin-bottom:8px; height: 150px; border-radius: 50%; object-fit: cover;">
@@ -107,12 +115,7 @@
                                         </div>
 
 
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="billing-info">
-                                                        <label>Full Name</label>
-                                                        <input type="text" name="name" value="{{ old('name', $user->name ?? '') }}" class="form-control">
-                                                    </div>
-                                                </div>
+                                                
 
                                                 <div class="col-lg-6 col-md-6">
                                                     <div class="billing-info">

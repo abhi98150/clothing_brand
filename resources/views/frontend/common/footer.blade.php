@@ -3,12 +3,24 @@
         <div class="row">
             <div class="col-lg-2 col-md-4 col-sm-4">
                 <div class="copyright mb-30">
+
+                <!-- footer webiste logo -->
                     <div class="footer-logo">
                         <a href="index.blade.php">
                             <img alt="" src="assets/img/logo/logo.png">
                         </a>
                     </div>
+                <!-- footer logo end -->
+
+                <!-- copyright msg -->
                     <p>© 2021 <a href="#">Flone</a>.<br> All Rights Reserved</p>
+                <!-- copyright msg end -->
+
+                <!-- footer contact no -->
+                    <h5> Mobile No:</h5>
+                    <h6> 9817222244</h6>
+                <!-- contactno end  -->
+
                 </div>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-4">
