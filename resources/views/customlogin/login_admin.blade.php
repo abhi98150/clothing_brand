@@ -59,6 +59,18 @@
                 
                 <div class="signin-form">
                     <!-- Flash message container -->
+
+                    <div class="alert-container" style="margin-bottom: 20px;">
+                    @if(session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                            <button type="button" class="close-btn" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                </div>
+
                     <div class="alert-container" style="margin-bottom: 20px;">
                         @if(session('success'))
                             <div class="alert alert-success">

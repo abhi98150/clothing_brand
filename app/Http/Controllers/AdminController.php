@@ -13,8 +13,18 @@ use App\Mail\welcomeMail;
 
 
 
-class AdminController extends Controller
+class AdminController extends BaseController
 {
+
+        public function index()
+        {
+            // Get the currently authenticated admin user
+            $admin = Auth::guard('admin')->user();
+
+            // Return the view and share the admin data with the navbar view
+            return view('backend.index')->with('admin', $admin);
+        }
+            
 
     // Handle admin login request
     public function login(Request $request)
@@ -28,6 +38,13 @@ class AdminController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ])) {
+
+             // Fetch the admin details
+             $admin = Admin::where('email', $request->email)->first();
+             // Store admin details in session or pass it to the view
+             session(['admin' => $admin]);
+
+             
             return redirect()->route('admin.dashboard');
         }
 
@@ -43,6 +60,7 @@ class AdminController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('admin.login');
+        // Add a flash message for successful logout
+        return redirect()->route('admin.login')->with('status', 'Logged out successfully!');
     }
 }

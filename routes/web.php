@@ -11,6 +11,17 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\welcomeMail;
 use App\Http\Controllers\MyaccountController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\MyprofileController;
+use App\Http\Controllers\ProductController;
+
+
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -72,7 +83,7 @@ Route::get('/login', 'AuthController@loginForm')->name('login');
 Route::post('/login', 'AuthController@login')->name('login.submit');
 
 // Home route
-Route::view('/home', 'frontend.index')->name('home'); // Adjust to your actual home controller and method
+Route::view('/home', 'frontend.index')->name('home'); 
 
 // Handle logout request
 Route::post('/logout', 'AuthController@logout')->name('logout');
@@ -89,6 +100,49 @@ Route::get('/myaccount', 'MyaccountController@showAccount')->name('myaccount');
 
 // Route to handle the account update
 Route::put('/myaccount/update', 'MyaccountController@updateAccount')->name('myaccount.update');
+
+
+
+
+// backend dashboard
+  
+
+Route::view('/dashboard', 'backend.index')->name('admin.dashboard')->middleware('admin'); 
+
+
+// admin logout
+Route::post('/admin/logout','AdminController@logout')->name('admin.logout');
+
+// myprofile
+// Route::view('/dashboard/myprofile', 'backend.profilemanage')->name('myprofile')->middleware('admin'); 
+Route::get('/admin/profile','MyprofileController@showProfile')->name('myprofile')->middleware('admin');
+
+
+Route::view('/dashboard/abhi', 'backend.common.abhi')->name('test'); 
+
+// admin profile update
+Route::post('/admin/profile/update', 'MyprofileController@updateProfile')->name('admin.updateProfile');
+
+
+Route::get('/admin/site-settings', 'SiteSettingsController@index')->name('site-settings.index');
+Route::put('/admin/site-settings', 'SiteSettingsController@update')->name('site-settings.update');
+
+
+
+
+// Route::post('/settings/store', 'SiteSettingController@store')->name('settings.store');
+
+
+
+// for products
+Route::get('/products','ProductsController@index')->name('products.index')->middleware('admin');
+Route::get('/products/create','ProductsController@create')->name('products.create')->middleware('admin');
+Route::post('/products/store','ProductsController@store')->name('products.store')->middleware('admin');
+Route::delete('/products/{id}', 'ProductsController@delete')->name('products.delete')->middleware('admin');
+Route::get('/products/edit/{id}','ProductsController@edit')->name('products.edit')->middleware('admin');
+Route::put('/products/update/{id}','ProductsController@update')->name('products.update')->middleware('admin');
+
+
 
 
 
