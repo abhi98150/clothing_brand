@@ -60,14 +60,18 @@ class ProductsController extends Controller
         return redirect()->route('products.index')->with('success', 'Product added successfully.');
     }
     
-    public function edit($id) 
-    { 
+    public function edit($id)
+    {
         $product = Product::find($id);
-        if ($product) {
-            return view('products.edit', compact('product'));
+        
+        // Check if the product exists
+        if (!$product) {
+            return redirect()->back()->with('error', 'Product not found');
         }
-        return redirect()->back()->with('error', 'Product not found');
+    
+        return view('products.edit', compact('product'));
     }
+    
     public function update(Request $request, $id) 
     { 
         $product = Product::find($id);

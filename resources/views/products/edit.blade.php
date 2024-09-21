@@ -87,24 +87,25 @@
                                 <input type="text" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" name="price" value="{{ $product->price }}" required>
                             </div>
 
+                            <!-- images -->
                             <div style="flex: 1 1 100%; padding: 10px;">
-                            <label>Current Product Image</label>
-                            <div style="margin-bottom: 10px;">
-                                @if($product->image)
-                                    <img src="{{ asset('uploads/' . $product->image) }}" alt="Current Image" style="max-width: 150px; border: 1px solid #ccc; border-radius: 4px;">
-                                @else
-                                    <p>No image available</p>
-                                @endif
-                            </div>
-                            <label>Upload New Image (optional)</label>
-                            <div id="dropArea" style="position: relative; border: 2px dashed #ccc; padding: 20px; text-align: center;">
-                                <input type="file" id="fileInput" name="image" style="display: none;">
-                                <img src="{{ asset('assets/img/icons/upload.svg') }}" alt="Upload" style="max-width: 50px; margin-bottom: 10px;">
-                                <h4 style="margin: 0;">Drag and drop a file to upload</h4>
-                                <div id="fileName" style="margin-top: 10px; font-weight: bold;"></div>
-                            </div>
-                        </div>
-
+    <label>Current Product Image</label>
+    <div style="margin-bottom: 10px;">
+        @if($product->image && file_exists(public_path('uploads/' . $product->image)))
+            <img src="{{ asset('uploads/' . $product->image) }}" alt="Current Image" style="max-width: 150px; border: 1px solid #ccc; border-radius: 4px;">
+        @else
+            <p>No image available</p>
+        @endif
+    </div>
+    <label>Upload New Image (optional)</label>
+    <div id="dropArea" style="position: relative; border: 2px dashed #ccc; padding: 20px; text-align: center;">
+        <input type="file" id="fileInput" name="image" style="display: none;" onchange="updateFileName()">
+        <img src="{{ asset('assets/img/icons/upload.svg') }}" alt="Upload" style="max-width: 50px; margin-bottom: 10px;">
+        <h4 style="margin: 0;">Drag and drop a file to upload</h4>
+        <div id="fileName" style="margin-top: 10px; font-weight: bold;">No file chosen.</div>
+    </div>
+</div>
+   <!-- images end -->
 
                             <div style="flex: 1 1 100%; padding: 10px;">
                                 <button type="submit" class="btn btn-submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 4px;">Update</button>
@@ -118,7 +119,31 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<!-- current image showing js -->
+<script>
+    const fileInput = document.getElementById('fileInput');
+    const fileNameDisplay = document.getElementById('fileName');
+
+    document.getElementById('dropArea').addEventListener('click', () => fileInput.click());
+
+    function updateFileName() {
+        const files = fileInput.files;
+        if (files.length > 0) {
+            fileNameDisplay.textContent = `File: ${files[0].name}`;
+        } else {
+            fileNameDisplay.textContent = 'No file chosen.';
+        }
+    }
+</script>
+ <!-- end js  -->
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
